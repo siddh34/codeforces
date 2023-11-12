@@ -1,7 +1,7 @@
 use std::io::{self};
 
 /*
-Problem Statement
+Problem Statement 4A - A Watermelon 
 
 One hot summer day Pete and his friend Billy decided to buy a watermelon. They chose the biggest and the ripest one, in their opinion. After that the watermelon was weighed, and the scales showed w kilos. They rushed home, dying of thirst, and decided to divide the berry, however they faced a hard problem.
 
@@ -21,7 +21,7 @@ pub fn main() {
         .expect("Failed to read line");
     let number: i32 = input_line.trim().parse().expect("Failed to parse input");
 
-    if number % 2 == 0 {
+    if number % 2 == 0 && number > 2 {
         println!("YES");
     } else {
         println!("NO");
