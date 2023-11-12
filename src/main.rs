@@ -1,3 +1,7 @@
+mod controllers {
+    pub mod a_watermelon;
+}
+
 fn main() {
-    println!("Hello, world!");
+    controllers::a_watermelon::main();
 }
