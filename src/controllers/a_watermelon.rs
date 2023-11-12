@@ -14,16 +14,16 @@ Output
 Print YES, if the boys can divide the watermelon into two parts, each of them weighing even number of kilos; and NO in the opposite case.
 */
 
-
-pub fn main(){
+pub fn main() {
     let mut input_line = String::new();
-    io::stdin().read_line(&mut input_line).expect("Failed to read line");
+    io::stdin()
+        .read_line(&mut input_line)
+        .expect("Failed to read line");
     let number: i32 = input_line.trim().parse().expect("Failed to parse input");
 
     if number % 2 == 0 {
         println!("YES");
-    }
-    else{
+    } else {
         println!("NO");
     }
 }
