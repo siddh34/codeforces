@@ -1,0 +1,1 @@
+{"name":"Local: a_team","url":"/media/storage/codeforces/src/controllers/a_team.rs","tests":[{"id":1699861442353,"input":"3\n1 1 0\n1 1 1\n1 0 0","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/media/storage/codeforces/src/controllers/a_team.rs","group":"local","local":true}
