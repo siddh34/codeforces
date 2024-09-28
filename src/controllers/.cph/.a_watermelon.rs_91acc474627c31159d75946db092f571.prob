@@ -1,1 +1,0 @@
-{"name":"Local: a_watermelon","url":"/media/storage/codeforces/src/controllers/a_watermelon.rs","tests":[{"id":1699763398228,"input":"2","output":"NO"},{"id":1699763627073,"input":"8","output":"YES"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/media/storage/codeforces/src/controllers/a_watermelon.rs","group":"local","local":true}
