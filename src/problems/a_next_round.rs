@@ -21,7 +21,7 @@ pub fn main(){
 
     let mut number = number_str.trim().split_whitespace().map(|x| x.parse::<i32>().unwrap());
 
-    let n = number.next().unwrap();
+    let _n = number.next().unwrap();
     let k = number.next().unwrap();
 
     let mut scores_str = String::new();
