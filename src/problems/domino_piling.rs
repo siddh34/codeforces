@@ -41,13 +41,13 @@ pub fn testing_main(input: &str) -> String {
 }
 
 pub fn main(){
-    let mut input_line = String::new();
+    let mut input_line: String = String::new();
     io::stdin().read_line(&mut input_line).expect("Failed to read input!");
 
-    let mut numbers = input_line.trim().split_whitespace();
+    let mut numbers: std::str::SplitWhitespace<'_> = input_line.trim().split_whitespace();
     let m: usize = numbers.next().unwrap().parse().unwrap();
     let n: usize = numbers.next().unwrap().parse().unwrap();
 
-    let result = (m * n) / 2;
+    let result: usize = (m * n) / 2;
     println!("{}", result);
 }
