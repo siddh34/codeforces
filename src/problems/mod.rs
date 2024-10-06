@@ -4,3 +4,4 @@ pub mod a_watermelon;
 pub mod theatre_square;
 pub mod way_too_long_words;
 pub mod bit_plus_plus;
+pub mod domino_piling;
