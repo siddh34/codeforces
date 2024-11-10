@@ -7,3 +7,4 @@ pub mod bit_plus_plus;
 pub mod domino_piling;
 pub mod beautiful_matrix;
 pub mod petya_and_strings;
+pub mod helpful_maths;

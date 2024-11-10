@@ -51,8 +51,8 @@ pub fn testing_main(input: &str) -> String {
 }
 
 pub fn main() {
-    let mut str1 = String::new();
-    let mut str2 = String::new();
+    let mut str1: String = String::new();
+    let mut str2: String = String::new();
 
     io::stdin().read_line(&mut str1).expect("Failed to read str1");
     io::stdin().read_line(&mut str2).expect("Failed to read str2");
