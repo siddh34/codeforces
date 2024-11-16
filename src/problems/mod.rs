@@ -8,3 +8,4 @@ pub mod domino_piling;
 pub mod beautiful_matrix;
 pub mod petya_and_strings;
 pub mod helpful_maths;
+pub mod word_capitalization;
