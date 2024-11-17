@@ -5,3 +5,4 @@ mod helpful_maths_test;
 mod petya_and_string_test;
 mod theatre_square_test;
 mod word_capitalization_test;
+mod boy_or_girl_test;
