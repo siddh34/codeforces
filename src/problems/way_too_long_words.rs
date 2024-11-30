@@ -20,15 +20,19 @@ Output
 Print n lines. The i-th line should contain the result of replacing of the i-th word from the input data.
 */
 
-pub fn main(){ 
+pub fn main() {
     let mut input_line = String::new();
-    io::stdin().read_line(&mut input_line).expect("Failed to read starting number!");
+    io::stdin()
+        .read_line(&mut input_line)
+        .expect("Failed to read starting number!");
 
     let number: i32 = input_line.trim().parse().expect("Failed to parse input");
 
     for _ in 0..number {
         let mut input_line = String::new();
-        io::stdin().read_line(&mut input_line).expect("Failed to read inside loop!");
+        io::stdin()
+            .read_line(&mut input_line)
+            .expect("Failed to read inside loop!");
         let word: String = input_line.trim().to_string();
 
         if word.len() > 10 {
@@ -36,8 +40,7 @@ pub fn main(){
             let last_letter = word.chars().nth(word.len() - 1).unwrap();
             let mid_length = word.len() - 2;
             println!("{}{}{}", first_letter, mid_length, last_letter);
-        }
-        else{
+        } else {
             println!("{}", word);
         }
     }

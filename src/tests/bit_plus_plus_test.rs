@@ -11,7 +11,7 @@ mod tests {
     }
 
     #[test]
-    fn test_scenario_second(){
+    fn test_scenario_second() {
         let input: &[&str] = &["2", "x++", "--x"];
         let result: String = testing_main(input);
         let expected: usize = 0;

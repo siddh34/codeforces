@@ -15,19 +15,30 @@ Output
 Output the number of participants who advance to the next round.
 */
 
-pub fn main(){
+pub fn main() {
     let mut number_str = String::new();
-    io::stdin().read_line(&mut number_str).expect("Failed to read the line");
+    io::stdin()
+        .read_line(&mut number_str)
+        .expect("Failed to read the line");
 
-    let mut number = number_str.trim().split_whitespace().map(|x| x.parse::<i32>().unwrap());
+    let mut number = number_str
+        .trim()
+        .split_whitespace()
+        .map(|x| x.parse::<i32>().unwrap());
 
     let _n = number.next().unwrap();
     let k = number.next().unwrap();
 
     let mut scores_str = String::new();
-    io::stdin().read_line(&mut scores_str).expect("Failed to read the line");
+    io::stdin()
+        .read_line(&mut scores_str)
+        .expect("Failed to read the line");
 
-    let scores = scores_str.trim().split_whitespace().map(|x| x.parse::<i32>().unwrap()).collect::<Vec<i32>>();
+    let scores = scores_str
+        .trim()
+        .split_whitespace()
+        .map(|x| x.parse::<i32>().unwrap())
+        .collect::<Vec<i32>>();
 
     let k_score = scores[k as usize - 1];
     let mut count = 0;

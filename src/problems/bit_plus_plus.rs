@@ -1,6 +1,5 @@
 use std::io::{self};
 
-
 /*
 A. Bit++
 time limit per test1 second
@@ -52,15 +51,25 @@ pub fn testing_main(input_lines: &[&str]) -> String {
     return x.to_string();
 }
 
-pub fn main(){
+pub fn main() {
     let mut input_line = String::new();
-    io::stdin().read_line(&mut input_line).expect("Failed to read input!");
+    io::stdin()
+        .read_line(&mut input_line)
+        .expect("Failed to read input!");
 
-    let n: i64 = input_line.trim().split_whitespace().next().unwrap().parse().unwrap();
+    let n: i64 = input_line
+        .trim()
+        .split_whitespace()
+        .next()
+        .unwrap()
+        .parse()
+        .unwrap();
     let mut x: i64 = 0;
     for _ in 0..n {
         let mut statement = String::new();
-        io::stdin().read_line(&mut statement).expect("Failed to read statement!");
+        io::stdin()
+            .read_line(&mut statement)
+            .expect("Failed to read statement!");
         if statement.contains("++") {
             x += 1;
         } else if statement.contains("--") {

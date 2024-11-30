@@ -25,7 +25,7 @@ pub fn testing_main(input: &str) -> String {
     let a: u64 = numbers.next().unwrap().parse().unwrap();
 
     let result = ((n + a - 1) / a) * ((m + a - 1) / a);
-    return result.to_string()
+    return result.to_string();
 }
 
 pub fn main() {
@@ -42,5 +42,3 @@ pub fn main() {
     let result = ((n + a - 1) / a) * ((m + a - 1) / a);
     println!("{}", result);
 }
-
-

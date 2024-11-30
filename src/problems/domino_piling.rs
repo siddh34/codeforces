@@ -40,9 +40,11 @@ pub fn testing_main(input: &str) -> String {
     return result.to_string();
 }
 
-pub fn main(){
+pub fn main() {
     let mut input_line: String = String::new();
-    io::stdin().read_line(&mut input_line).expect("Failed to read input!");
+    io::stdin()
+        .read_line(&mut input_line)
+        .expect("Failed to read input!");
 
     let mut numbers: std::str::SplitWhitespace<'_> = input_line.trim().split_whitespace();
     let m: usize = numbers.next().unwrap().parse().unwrap();

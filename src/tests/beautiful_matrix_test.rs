@@ -12,7 +12,7 @@ mod tests {
     }
 
     #[test]
-    fn test_scenario_second(){
+    fn test_scenario_second() {
         let input: &str = "0 0 0 0 0\n0 0 0 0 0\n0 1 0 0 0\n0 0 0 0 0\n0 0 0 0 0";
         let result: String = testing_main(input);
         let expected: usize = 1;

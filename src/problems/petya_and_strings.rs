@@ -54,8 +54,12 @@ pub fn main() {
     let mut str1: String = String::new();
     let mut str2: String = String::new();
 
-    io::stdin().read_line(&mut str1).expect("Failed to read str1");
-    io::stdin().read_line(&mut str2).expect("Failed to read str2");
+    io::stdin()
+        .read_line(&mut str1)
+        .expect("Failed to read str1");
+    io::stdin()
+        .read_line(&mut str2)
+        .expect("Failed to read str2");
 
     let result: std::cmp::Ordering = str1.trim().to_lowercase().cmp(&str2.trim().to_lowercase());
 
