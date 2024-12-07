@@ -11,3 +11,4 @@ pub mod petya_and_strings;
 pub mod theatre_square;
 pub mod way_too_long_words;
 pub mod word_capitalization;
+pub mod stones_on_the_table;
