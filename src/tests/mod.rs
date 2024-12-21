@@ -9,3 +9,4 @@ mod theatre_square_test;
 mod word_capitalization_test;
 mod stones_on_the_table_test;
 mod elephant_test;
+mod a_solider_and_bananas_test;
